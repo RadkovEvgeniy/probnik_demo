@@ -23,9 +23,7 @@ namespace demo3
             StartPosition = FormStartPosition.CenterScreen;
             createcolumns();
             refreshdatagrid(dataGridView1);
-            pictureBox1.Visible = false;
-            pictureBox2.Visible = false;
-            pictureBox3.Visible = false;
+            dataGridView1_CellContentClick(this.dataGridView1, new DataGridViewCellEventArgs(0, 0));
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -95,9 +93,6 @@ namespace demo3
             }
 
             dataGridView1.Visible = false;
-            pictureBox1.Visible = true;
-            pictureBox2.Visible = true;
-            pictureBox3.Visible = true;
         }
     }
 }
